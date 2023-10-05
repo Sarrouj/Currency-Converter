@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>y Transfer Solution</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="headerContainer">
+                <div class="leftSide">
+                    <span class="logo">Currency</span>
+                </div>
+                <div class="rightSide">
+                    <ul>
+                        <li>Send Money</li>
+                        <li>Currency API</li>
+                        <li>Tools</li>
+                        <li>Resources</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="navContainer">
+                <div class="title">
+                    <h1>Trusted Global Currency Converter & Money Transfer Solutions</h1>
+                    <p>Best source for currency conversion, sending money online and tracking exchange rates                    </p>
+                </div>
+                <div class="currencyContainer">
+                    <div class="inputContainer">
+                        <form action="" class="amount">
+                            <label for="amount">Amount</label>
+                            <input type="number" class="user">
+                        </form>
+                        <form action="">
+                            <label for="From">From</label>
+                            <select id="From" name="From">
+                                <option value="USD">USD</option>
+                                <option value="MAD">MAD</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </form>
+                        <form action="">
+                            <label for="TO">To</label>
+                            <select id="To" name="To">
+                              <option value="USD">MAD</option>
+                              <option value="MAD">USD</option>
+                              <option value="EUR">EUR</option>
+                            </select>
+                        </form>
+                        <button class="convert">Convert</button>
+                    </div>
+                    <div class="results">
+                        <span>4.00 US Dollars =</span>
+                        <span class="re"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script src="./main.js" type="module"></script>
+</html>

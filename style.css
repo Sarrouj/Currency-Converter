@@ -1,0 +1,163 @@
+:root{
+    --mainColor : #0A146E;
+    --secondaryColor : #F0F5FA;
+    --borderColor : #adadad;
+
+    /* FONT WEIGHT */
+    --fw3 : 300;
+    --fw4 : 400;
+    --fw5 : 500;
+    --fw6 : 600;
+    --fw7 : 700;
+    --fw8 : 800;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+
+.wrapper > .header {
+    background-color: var(--mainColor);
+}
+
+.header > .headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90vw;
+    margin: 0 auto;
+    height: 12vh;
+    color: white;
+}
+
+.header .leftSide > span {
+    font-weight: var(--fw8);
+    font-size: 1.5rem;
+}
+
+.header .headerContainer .rightSide > ul{
+    display: flex;
+    gap: 2.5rem;
+}
+
+/* Nav */
+
+.wrapper > .nav{
+    background-image: linear-gradient(
+        rgba(4, 54, 161, 90%), 
+        rgba(13, 5, 121, 80%)
+      ),
+      url('./images/ibrahim-boran-_aUwE2DnIPg-unsplash.jpg');
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.nav > .navContainer{
+    align-items: center;
+
+}
+
+.nav > .navContainer > .title {
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.nav > .navContainer > .title > h1{
+    font-weight: var(--fw6);
+    font-size: 1.8rem;
+}
+
+.nav > .navContainer > .title  p {
+    font-weight: var(--fw4);
+    font-size: .9rem;
+}
+
+/* Currency */
+.nav  .currencyContainer {
+    background-color: white;
+    height: 45vh;
+    width: 90vw;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.currencyContainer > .inputContainer{
+    padding: 3rem;
+    display: flex;
+    position: relative;
+    gap: 2rem;
+}
+
+.currencyContainer > .inputContainer > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.currencyContainer > .inputContainer > form > input{
+    width: 25vw;
+    height: 2.8rem;
+    outline: none;
+    border: 1px solid var(--borderColor);
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: .5rem;
+}
+.currencyContainer > .inputContainer > form > select{
+    width: 25vw;
+    height: 2.8rem;
+    outline: none;
+    border: 1px solid var(--borderColor);
+    border-radius: 4px;
+    padding: .5rem;
+}
+
+.currencyContainer > .inputContainer > form > label{
+    font-weight: var(--fw6);
+    font-size: 1rem;
+}
+
+.convert{
+    position: absolute;
+    top: 10rem;
+    right: 5rem;
+    border: none;
+    height: 8vh;
+    width: 10vw;
+    background-color: #0071EB;
+    color: white;
+    font-size: 1rem;
+    font-weight: var(--fw6);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Results */
+.results{
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+}
+
+.results :nth-child(1){
+    font-weight: var(--fw6);
+    font-size: 1.4rem;
+    color: var(--borderColor);
+}
+.results :nth-child(2){
+    font-weight: var(--fw6);
+    font-size: 2rem;
+}
