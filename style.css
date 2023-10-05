@@ -2,6 +2,7 @@
     --mainColor : #0A146E;
     --secondaryColor : #F0F5FA;
     --borderColor : #adadad;
+    --boxShadow : 1px 2px 18px -5px rgba(87,93,255,1);
 
     /* FONT WEIGHT */
     --fw3 : 300;
@@ -72,8 +73,8 @@ body{
 .nav > .navContainer > .title {
     color: white;
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 .nav > .navContainer > .title > h1{
@@ -91,9 +92,15 @@ body{
     background-color: white;
     height: 45vh;
     width: 90vw;
-    margin: 0 auto;
+    margin: 5vh auto 0 auto;
     border-radius: 20px;
+    box-shadow: var(--boxShadow);
+    transition: .3s ease-in-out;
 }
+
+/* .nav .currencyContainer:hover{
+    transform: scale(1.0298);
+} */
 
 .currencyContainer > .inputContainer{
     padding: 3rem;
@@ -125,9 +132,11 @@ body{
     padding: .5rem;
 }
 
+
 .currencyContainer > .inputContainer > form > label{
     font-weight: var(--fw6);
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .convert{
@@ -135,14 +144,19 @@ body{
     top: 10rem;
     right: 5rem;
     border: none;
-    height: 8vh;
+    height: 6.5vh;
     width: 10vw;
     background-color: #0071EB;
     color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: var(--fw6);
     border-radius: 10px;
     cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.convert:hover{
+    transform: scale(1.0298);
 }
 
 /* Results */
@@ -160,4 +174,16 @@ body{
 .results :nth-child(2){
     font-weight: var(--fw6);
     font-size: 2rem;
+}
+
+/* Footer */
+.nav2{
+    height: 23vh;
+}
+
+.footer{
+    width: 10vw;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--borderColor);
 }
