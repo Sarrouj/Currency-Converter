@@ -90,7 +90,7 @@ body{
 /* Currency */
 .nav  .currencyContainer {
     background-color: white;
-    height: 45vh;
+    height: 50vh;
     width: 90vw;
     margin: 5vh auto 0 auto;
     border-radius: 20px;
@@ -174,16 +174,4 @@ body{
 .results :nth-child(2){
     font-weight: var(--fw6);
     font-size: 2rem;
-}
-
-/* Footer */
-.nav2{
-    height: 23vh;
-}
-
-.footer{
-    width: 10vw;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    color: var(--borderColor);
 }
